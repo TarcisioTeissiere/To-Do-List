@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5; /* Fundo mais suave */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+button {
+    margin-top: 10px; /* Ajusta o espaço acima dos botões */
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    width: 220px;
+    padding: 12px 16px;
+    background-color: rgb(0, 175, 73);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito suave de transição */
+}
+
+button:hover {
+    background-color: rgb(0, 145, 50); /* Cor de fundo do botão ao passar o mouse */
+}
+
+input, #mostrar {
+    margin-top: 10px; /* Ajusta o espaço acima dos inputs */
+    border: 2px solid #ddd; /* Borda leve para os inputs */
+    outline: 0;
+    border-radius: 6px;
+    width: 220px;
+    padding: 12px 16px;
+    background-color: rgb(248, 248, 248);
+    transition: border-color 0.3s ease; /* Efeito suave de transição */
+}
+
+input:focus, #mostrar:focus {
+    border-color: rgb(0, 175, 73); /* Muda a cor da borda ao focar */
+}
+
+ul {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+    width: 260px; /* Mantém a largura alinhada com inputs e botões */
+}
+
+li {
+    background-color: white;
+    margin-bottom: 8px; /* Espaçamento entre os itens da lista */
+    padding: 10px 14px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre tarefa e botão */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para destacar */
+}
+
+li button {
+    background-color: rgb(255, 69, 58); /* Botão de exclusão com cor destacada */
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: rgb(220, 50, 50); /* Cor ao passar o mouse no botão de excluir */
+}
+
+label {
+    text-align: center;
+    margin-bottom: 10px; /* Espaçamento entre o label e os inputs */
+    font-weight: bold;
+    color: #333; /* Cor do texto mais suave */
+}
